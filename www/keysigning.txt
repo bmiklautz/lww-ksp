@@ -1,0 +1,103 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: RIPEMD160
+
+Efficient Group Key Signing Method
+Revision 1.5
+
+Len Sassaman and Phil Zimmermann
+
+__
+
+
+In order to make key signing parties run more efficiently, we propose a
+new method of doing mass fingerprint verification.
+
+__
+
+
+1. Participants in the key signing submit their keys to the signing
+organizer, with unnecessary signatures and user-ids trimmed off.
+Participants may be required to sign their submission message in order to
+prove ownership of their key.
+
+2. The signing organizer compiles the key information (including the key
+fingerprint, user-id, key-id, and key size) in a text file and makes it
+publicly available. Keys should be numbered sequentially, and multiple
+keys by the same owner should be grouped together.
+
+3. The signing organizer takes the hash of the text file (using a secure
+hash function such as SHA-1 or RIPEMD-160), and brings this to the key
+signing. The hash information should also be posted publicly for sanity
+checking purposes. (Different text file formats will result in different
+hashes, due to line ending variations.)
+
+4. Each person wishing to sign the keys on this paper obtains the text
+file from its public location, and independently obtains the hash
+checksum.
+
+On most Unix systems, the program sha1sum is available. Alternatively,
+GnuPG can be used to determine the hash output. Syntax is:
+
+"gpg --print-md sha1 filename" or
+"gpg --print-md ripemd160 filename"
+
+5. Participants bring a hard copy of this text file and a copy of the
+hash checksum to the key signing. Participants who wish to have their
+keys signed should verify the fingerprint on the paper against their
+actual key prior to the event.
+
+6. The checksum output is read aloud to the group. Participants confirm
+this sum with the independently obtained checksum of the file prior to
+actually signing any keys.
+
+7. Each person wishing to have his key signed verifies to the group that
+the fingerprint and key information presented in the text file is indeed
+the correct information. A simple assertion that "yes, this information is
+correct" is sufficient. 
+
+For large groups, the process may be expedited by instructing the
+attendees to line up according to the number next to their key
+information.
+
+8. Identity verification is done according to the individual policy of
+those people signing keys. (Note that the level of identification an
+individual requires may vary greatly from person to person, and should not
+be dictated by the key signing organizers.)
+
+9. Participants opting to sign later obtain the public keys (either from 
+the signing organizer, or from a public server) and confirm that the key 
+fingerprints and other information match that reported in the text file. 
+They may then sign the keys. 
+
+__
+
+
+The rationale behind this method is that, by placing all the fingerprints
+in a text file and providing the hash, significant time can be avoided
+without a decrease in security. Each individual is responsible for making
+sure his or her fingerprint is correctly reported, and every person
+signing is guaranteed to have identical fingerprint lists. We expect this
+method to reduce the time involved in actual key signing parties by half.
+
+
+Thanks to Werner Koch, Peter Wan, Randy Harmon, Patrick Feisthammel, Robyn
+Wagner, Rodney Thayer, David Stoler, John Kane, Lucky Green, Peter
+Palfrader, the attendees of the First PGP Keyserver Manager Symposium, and
+many others for their help in fine-tuning this process.
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIVAwUBQuV2FUoKgUld5ID8AQMh6A/+M9FQFmQFNd9DqYKmRNsTEbN407wi6otT
+/HbA9I4xa9jmQmbuxV4KlWwIHa+OnjFyPgbpElDwAzba/nORMgNQwAzZ0pDR5HYI
+zJsiJi0juos40XqSVlPhjQc7rhx3r0LrMg8Ewrlr28E7Bry4ymOYMvwnN91gUqHa
+4tHROELXTs3jnypJc9dU+Jyy3JeMc8ivFrTq77007FplvbB0q/fj80uYxEq8c3/o
+9E0P1sMZ8bmUhgLWEf+UyeaPRTpWsbvB56adRmG11+7ReXhXTMT48CvMOsemU+C5
+DZ323K6yWBhOoMgYEdeO5zCcDJOYPG0lFbHWxgXnO9+ig4BmlMPj7HqnhrksV/Fm
+zG0J4h9GEeRQKA4ecz1uAqrLttZbZgayknMdadvwPvpbDSQuX97NOXbXUJdXCFbK
+BXahHj2ZSMet8yDHH7t00fYXe6tw/WD7n1Ts7qPZCYsi0OAxJrlLsQtjNi/BeYJR
+W6jcBg5ktNA0Fph5L86giSrV3xeNRS0zaotH3V6/hsA0132BasExrVpazDrl19ke
+9OcUumV5kWBXLniq96YHToAWV7ZQC7be/B4ETEPgn5cZop+ccW8/RLafpXuRDe1g
+vs3PvF74fk3rY3HLsn8gb0xvb955VNnbIF01JRAOnxxHDfk2tAyNpWak308d4Of2
+hEUMvOXvsF0=
+=K4aR
+-----END PGP SIGNATURE-----
