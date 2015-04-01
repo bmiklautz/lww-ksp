@@ -1,0 +1,37 @@
+Hallo,                     [english version below]
+
+die finale Teilnehmerliste fuer die Keysigningparty Linuxwochen 
+Wien ist jetzt online [1]. Bitte downloade, und drucke diese aus. 
+Berechne die RIPEMD160 und auch die SHA256 Pruefsumme der _unmodifizierten_ 
+Datei ksp-linuxwochen-wien-15.txt. 
+Ueberpruefe weiters, dass Dein Fingerprint in der Datei richtig ist.  
+Zur Party bringst Du bitte den Ausdruck, einen Kugelschreiber, und 
+Deinen Ausweis. Eine Datei mit allen Schluesseln findest du auf der 
+Koordinationsseite fuer die Party [2].
+
+Bei Fragen lies Dir bitte [2] durch oder schick mir eine kurze Mail.
+
+Die sha256 Pruefsummer der Datei ksp-linuxwochen-wien-15.txt [1] 
+beginnt mit D2 47 6A 62 ..
+
+Hi,
+
+the final list of participants for the Linuxwochen Wien Keysigningparty is 
+now online [1]. 
+Please and print this file, compute its RIPEMD160 and its SHA256 checksum and write
+them down on the printout. Make sure to compute the hash of the _unmodified_
+ksp-linuxwochen-wien-15.txt [1]. Verify that your fingerprint(s) in the file 
+are correct. Bring the hardcopy, a pen, and proof of identity to the 
+keysigning party. A file with all the keys can be found on the keysigning 
+coordination page at [2].
+
+If you have any questions please read [2] or send me mail.
+
+The md5sum of ksp-linuxwochen-wien-15.txt [1] starts with D2 47 6A 62 ..
+
+
+[1] http://ksp.linuxwochen.at/ksp-linuxwochen-wien-15.txt
+[2] http://ksp.linuxwochen.at/
+
+So long,
+Bernhard

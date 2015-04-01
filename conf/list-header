@@ -1,0 +1,38 @@
+--------------------------------------------------------------------------------
+Room: FIXME 
+FIXME DATE                      Bernhard Miklautz <bernhard.miklautz@shacknet.at>
+--------------------------------------------------------------------------------
+
+                   L I N U X W O C H E N - W I E N  2 0 1 5
+
+                        K E Y S I G N I N G P A R T Y
+                        
+
+--------------------------------------------------------------------------------
+Here's what you have to do with this file:
+(1) Print this file to paper.
+(2) Compute RIPEMD160 and SHA256 checksums of this *unchanged* file.
+     gpg --print-md ripemd160 ksp-linuxwochen-wien-15.txt (or use sha1sum)
+     gpg --print-md sha256 ksp-linuxwochen-wien-15.txt (or use md5sum)
+(3) Check that both your Key-ID and your listed FPR are correct.
+(4) Fill in the checksums hash values into the printout.
+(5) Bring the printout, a pen, and proof of identity to the
+    keysigningparty and be on time!
+
+--------------------------------------------------------------------------------
+
+RIPEMD160 Checksum:   ____ ____     ____ ____     ____
+
+
+
+                      ____ ____     ____ ____     ____                      [ ]
+
+
+SHA256 Checksum:      ____ ____     ____ ____      ____ ____     ____ ____
+
+
+                      ____ ____     ____ ____      ____ ____     ____ ____  [ ]
+
+
+--------------------------------------------------------------------------------
+

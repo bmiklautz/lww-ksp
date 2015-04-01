@@ -1,3 +1,7 @@
-gpg
-*.log
+logs
 www/keys
+www/index.html
+www/gpg
+keys/*
+ksp-linuxwochen-wien*
+gpg
